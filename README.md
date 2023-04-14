@@ -7,7 +7,6 @@ https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3
 
 
 ## Main Used Libraries:
-
 - redux-toolkit: state management
 - styled-component: for styling components
 - react-select - for dropdowns
@@ -16,11 +15,10 @@ https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3
 
 We could ahve achieve functionality for this task with React 
 local state or using with useReducer but for scalability purposes 
-for upcoming features or screens we are using redux as state 
-managment solution. 
+we are using redux as state managment solution. 
 
 ## Responsiveness
-Its mostly responsive but some minor tweeks may have required. 
+Its mostly responsive but some minor tweeks may  required. 
 Here to complete the task functionality I am following the
 basic layout , UI and UX can be improved as per the design requirements.
 
@@ -28,9 +26,15 @@ basic layout , UI and UX can be improved as per the design requirements.
 Here its using Proptypes for type safety but in case required we can easily integrate Typescript to avoid run time errors.
 
 ## Testing 
-As mentioned in the task , only one Taboo component UI tests have
+Only one Taboo component UI tests have
 been added. Other UI testing and redux store testing 
-can be done and respective test cases can be added.
+can be done and respective.
+
+## ESling 
+Esling config file should be added with some agreed set of rules to follow best coding paractices.
+Comments can be added more.
+
+
 
 
 # Getting Started with Create React App

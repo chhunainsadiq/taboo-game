@@ -24,7 +24,6 @@ function Timer(){
       // When time is up, show the final score modal
       if (remainingTime < 0) {
         clearInterval(timer);
-        // Reset the playing button, the timer and correct counter
         setIsModalOpen(true)
       }
     }
@@ -38,6 +37,7 @@ function Timer(){
 
   const handleOnConfirm = () => {
     setRemainingTime(initialSeconds)
+    // Reset the timer and correct counter
     dispatch(unsetTabooTurn())
     // change the card
     dispatch(setCurrentTabooItem(pickRandomTaboo(currentCategoryData)))

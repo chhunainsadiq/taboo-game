@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: ${`${screenSizes.sm}px`}) { 
       margin: 0;
       padding : 0;
-
     }
   }
 

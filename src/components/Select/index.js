@@ -17,7 +17,6 @@ function MenuSelect({
   options,
   setValue,
   className,
-  valueBased,
   overflow,
   maxWidth,
   isPlaceholder,

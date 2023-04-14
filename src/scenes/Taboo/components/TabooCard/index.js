@@ -44,9 +44,10 @@ const StyledTabooCard = styled.div`
     
 `
 
-function TabooCard(){
+const TabooCard = React.memo(() => {
     const dispatch = useDispatch()
     const { currentCategoryData, currentTabooItem } = useSelector(state => state.taboo)
+    
     useEffect(() => { 
         dispatch(setCurrentTabooItem(pickRandomTaboo(currentCategoryData)))
     }, [currentCategoryData, dispatch])
@@ -64,6 +65,6 @@ function TabooCard(){
             </div>
         </StyledTabooCard>
     )
-}
+})
 
 export default TabooCard

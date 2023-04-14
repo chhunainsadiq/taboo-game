@@ -47,5 +47,4 @@ export const StyledButton = styled.button`
     border: none;
     cursor: unset;
   }
-
 `;

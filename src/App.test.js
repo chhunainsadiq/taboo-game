@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders app without crash and with start message', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const startMessage = screen.getByText(/Please Choose above Category to Start/i);
+  expect(startMessage).toBeInTheDocument();
 });
